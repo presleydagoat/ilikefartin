@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
+<title>Portfolio | Lead Roblox Developer</title>
 <style>
   body{
     margin:0;
@@ -33,6 +33,11 @@
     font-size:13px;
     margin:10px 0 20px;
     color:#222;
+  }
+
+  .contact a, .project-title a, .code-link a {
+    color:inherit;
+    text-decoration:underline;
   }
 
   hr{
@@ -121,13 +126,15 @@
     text-align:center;
     font-size:12px;
     color:#555;
-    padding:6px;
+    overflow:hidden;
+    background:#fafafa;
   }
 
   .image-slot img{
     width:100%;
     height:100%;
     object-fit:cover;
+    display:block;
   }
 
   @media (max-width:600px){
@@ -144,19 +151,23 @@
 
 <div class="page">
 
-  <h1>[ Your Name ]</h1>
-  <p class="subtitle">Roblox Developer</p>
-  <p class="contact">[ email address ] &nbsp;|&nbsp; [ discord handle ] &nbsp;|&nbsp; [ link to work ]</p>
+  <h1>[ Spazz ]</h1>
+  <p class="subtitle">Lead Roblox Developer / Systems Architect</p>
+  <p class="contact">
+    [ <a href="mailto:propilot137@gmail.com">propilot137@gmail.com</a> ] &nbsp;|&nbsp; 
+    [ Discord: @backdoor.3xx ] &nbsp;|&nbsp; 
+    [ <a href="https://www.roblox.com/users/23668697/profile" target="_blank">Roblox Profile</a> ]
+  </p>
 
   <hr>
 
   <h2>Summary</h2>
-  <p>Four years of experience developing in Luau on Roblox, along with working knowledge of Python, JavaScript, and HTML. Comfortable across the full stack of a project — frontend, backend, integration, networking, and security. Built and released a full USAF-themed simulation game, currently working on a V2. Also design and manage Discord bots and moderation systems for large communities, and handle lighting design for simulator-style games.</p>
+  <p>Four years of experience developing in Luau on Roblox, along with working knowledge of Python, JavaScript, and HTML. Comfortable across the full stack of a project — frontend, backend, integration, networking, and security. Built and released a full realistic USAF game, currently working on a V2. Also design and manage Discord bots and moderation systems for large communities, and handle lighting design for simulator type games.</p>
 
   <h2>Skills</h2>
   <table>
     <tr>
-      <th>Language</th>
+      <th>Language / Tool</th>
       <th>Experience</th>
     </tr>
     <tr>
@@ -165,66 +176,86 @@
     </tr>
     <tr>
       <td>Python</td>
-      <td>Working knowledge</td>
+      <td>2 years</td>
     </tr>
     <tr>
       <td>JavaScript</td>
-      <td>Working knowledge</td>
+      <td>2 years</td>
     </tr>
     <tr>
       <td>HTML</td>
       <td>Working knowledge</td>
     </tr>
+    <tr>
+      <td>Rojo / Git</td>
+      <td>Workflow integration</td>
+    </tr>
   </table>
 
   <h2>Frameworks &amp; Systems</h2>
   <ul>
-    <li>Knit — used for structuring client/server Roblox projects</li>
-    <li>Helicopter Blizzard System</li>
-    <li>Kronos USAR system</li>
+    <li>Knit — single-script architecture separating client controllers and server services</li>
+    <li>ProfileService — session locking and data security handling</li>
+    <li>Helicopter Blizzard System &amp; Custom Flight Dynamics</li>
+    <li>Kronos USAR Telemetry &amp; Rescue Systems</li>
+    <li>GoodSignal / FastSignal thread management</li>
   </ul>
 
-  <h2>What I Focus On</h2>
-  <p>Frontend and backend development, integration between systems, networking, and security. Most of this work has gone into large Roblox simulation projects where things need to hold up under real use.</p>
+  <h2>How I Code</h2>
+  <p>I heavily utilize the Knit framework because it simplifies single-script architecture, separating client controllers and server services while automating communication without needing manual RemoteEvent setups. I write readable, organized, and completely un-obfuscated code with clear modular file structures. I don't use unnecessary unoptimized legacy scripts or third-party bloat. Instead, I strip out what isn't needed, enforce zero client trust, fix performance bottlenecks, and guarantee network calls remain clean under heavy server loads.</p>
+
+  <h2>Technical Documentation & Architecture</h2>
+  <p class="code-link">
+    <strong>Deep System Architecture Breakdown:</strong><br>
+    <a href="PASTE_YOUR_GOOGLE_DOC_LINK_HERE" target="_blank">View Technical Architecture Document (Google Doc) ↗</a>
+  </p>
+  <p>Contains complete technical walkthroughs covering flight telemetry, physics network ownership checks, signal event decoupling, and server-authoritative logic.</p>
 
   <h2>Projects</h2>
 
   <div class="project">
-    <div class="project-title">USAF Simulation Game</div>
+    <div class="project-title">Lackland Air Force Base Game</div>
     <div class="project-status">V2 in development</div>
-    <p>Solo-built USAF-themed simulation game on Roblox, covering frontend, backend, and core gameplay systems.</p>
+    <p>Solo developed USAF military simulation covering frontend, backend, avionics state synchronization, and core gameplay systems. Adapted pre-existing framework by stripping unnecessary features and heavily refactoring the codebase to meet project specs.</p>
     <div class="image-row">
-      <div class="image-slot">USAF game — map</div>
-      <div class="image-slot">USAF game — UI</div>
-      <div class="image-slot">USAF game — gameplay</div>
+      <div class="image-slot">
+        <img src="https://i.imgur.com/YOUR_IMAGE_ID_1.jpg" alt="USAF game — map overview">
+      </div>
+      <div class="image-slot">
+        <img src="https://i.imgur.com/YOUR_IMAGE_ID_2.jpg" alt="USAF game — gameplay mechanics">
+      </div>
+      <div class="image-slot">
+        <img src="https://i.imgur.com/YOUR_IMAGE_ID_3.jpg" alt="USAF game — atmospheric lighting">
+      </div>
+      <div class="image-slot">
+        <img src="https://i.imgur.com/YOUR_IMAGE_ID_4.jpg" alt="USAF game — flight line">
+      </div>
     </div>
   </div>
 
   <div class="project">
     <div class="project-title">Discord Bots for Military Communities</div>
-    <p>Custom-built Discord bots for military-themed servers, plus moderation and management of large military-affiliated communities.</p>
+    <p>Custom built Discord bots and system automation for military servers, along with moderation and community management for large military affiliated groups. Features created include automated document formatting and dispatch for Air Force MAJCOM servers.</p>
     <div class="image-row">
-      <div class="image-slot">Bot — dashboard</div>
-      <div class="image-slot">Bot — commands</div>
+      <div class="image-slot">
+        <img src="https://i.imgur.com/YOUR_IMAGE_ID_5.png" alt="Bot — admin dashboard">
+      </div>
+      <div class="image-slot">
+        <img src="https://i.imgur.com/YOUR_IMAGE_ID_6.png" alt="Bot — command execution">
+      </div>
     </div>
   </div>
 
   <div class="project">
     <div class="project-title">Lighting Design</div>
-    <p>Lighting design work for military and simulator-style Roblox games.</p>
+    <p>Atmospheric and realistic lighting configurations designed for USM, USAF, and simulator projects on Roblox.</p>
     <div class="image-row">
-      <div class="image-slot">Lighting — scene 1</div>
-      <div class="image-slot">Lighting — scene 2</div>
-      <div class="image-slot">Lighting — scene 3</div>
-    </div>
-  </div>
-
-  <div class="project">
-    <div class="project-title">UI Work</div>
-    <p>Not a dedicated UI designer, but able to put together clean, functional interfaces when a project needs it.</p>
-    <div class="image-row">
-      <div class="image-slot">UI example 1</div>
-      <div class="image-slot">UI example 2</div>
+      <div class="image-slot">
+        <img src="https://i.imgur.com/YOUR_IMAGE_ID_7.png" alt="Lighting — scene 1">
+      </div>
+      <div class="image-slot">
+        <img src="https://imgur.com/qizRNAn" alt="Lighting — scene 2">
+      </div>
     </div>
   </div>
 
